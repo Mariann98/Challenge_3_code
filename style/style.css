@@ -43,7 +43,9 @@ header img {
   height: 8em;
   width: auto;
 }
-
+.container {
+  display: flex;
+}
 .weather{
   display: flex;
   flex-direction: column;
@@ -87,7 +89,7 @@ header img {
 #map {
   display: flex;
   width: auto; 
-  height: 80%;
+  height: 50%;
   margin: 4em;
   border-radius: 2em;
 }
