@@ -32,14 +32,15 @@ const weather = {
     document.querySelector(".wind_speed").innerText = "Wind speed: " + speed + " mph";
 
     //show lon and lat on map according to search results
-    let map = new mapboxgl.Map({
+    const map = new mapboxgl.Map({
       container: "map",
       center: [data.coord.lon, data.coord.lat],
       style: "mapbox://styles/mariannalber/cl4la019k002p14qskjpbvoc6",
       zoom: 8,
     });
     //show marker icon for lon and lat on map according to search results
-    new mapboxgl.Marker(marker_icon).setLngLat([data.coord.lon, data.coord.lat]).addTo(map);
+    const landingSpot = new mapboxgl.Popup().setHTML('<h4>Best landing spot</h4>');
+    new mapboxgl.Marker(marker_icon).setLngLat([data.coord.lon, data.coord.lat]).setPopup(landingSpot).addTo(map);
   },
   //show weather data
   search: function () {
