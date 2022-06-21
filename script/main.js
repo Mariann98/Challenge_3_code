@@ -1,4 +1,3 @@
-
 //mapboxgl accesstoken
 mapboxgl.accessToken =
   "pk.eyJ1IjoibWFyaWFubmFsYmVyIiwiYSI6ImNsNGp6MjlvdTA5eTMzZW8xbWl4cmtpM2QifQ.fb8kLXjBKLtFrCuTFtIgLA";
@@ -31,14 +30,14 @@ const weather = {
     document.querySelector(".temp").innerText = temp + "°F";
     document.querySelector(".wind_speed").innerText = "Wind speed: " + speed + " mph";
 
-    //show lon and lat on map according to search results
+    //show lon and lat on map according to the search results
     const map = new mapboxgl.Map({
       container: "map",
       center: [data.coord.lon, data.coord.lat],
       style: "mapbox://styles/mariannalber/cl4la019k002p14qskjpbvoc6",
       zoom: 8,
     });
-    //show marker icon for lon and lat on map according to search results
+    //show marker icon for lon and lat on map according to the search results
     const landingSpot = new mapboxgl.Popup().setHTML('<h4>Best landing spot</h4>');
     new mapboxgl.Marker(marker_icon).setLngLat([data.coord.lon, data.coord.lat]).setPopup(landingSpot).addTo(map);
   },
