@@ -1,18 +1,13 @@
-
-
 * {
   font-family: co-headline, sans-serif;
 }
 body {
   height: 100vh;
-  margin: 0;
   background-color: #202020;
 }
 
 h1 {
   font-family: acier-bat-noir, sans-serif;
-  font-weight: 700;
-  font-style: normal;
   font-size: 4em;
   color: white;
 }
@@ -38,58 +33,54 @@ header {
   justify-content: space-around;
   margin-top: 1em;
 }
-
 header img {
   height: 8em;
   width: auto;
 }
-.container {
-  display: flex;
-}
-.weather{
+
+.weather {
   display: flex;
   flex-direction: column;
-  font-size: 180%;
-  align-items: center;
-  background: #c0a6f1 ;
-  color: white;
+  margin: 2em;
   padding: 2em;
   border-radius: 1em;
-  margin: 2em;
+  align-items: center;
+  background: #c0a6f1;
+  font-size: 180%;
+  color: white;
 }
 
 .search {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .search_bar {
-  width: 20%;
-  border: 0.3em solid #c0a6f1;
-  border-right: none;
   padding: 0.5em 0 0.5em 2em;
+  width: 20%;
   height: 1em;
+  border: 0.3em solid #c0a6f1;
   border-radius: 2em 0 0 2em;
-  font-size: 1.5em;
+  border-right: none;
   outline: none;
   text-transform: capitalize;
+  font-size: 1.5em;
 }
 .search_button {
   width: 5em;
   height: 1.95em;
   border: solid #c0a6f1;
-  background: #c0a6f1;
-  text-align: center;
-  color: white;
   border-radius: 0 2em 2em 0;
+  background: #c0a6f1;
   cursor: pointer;
+  text-align: center;
   font-size: 2em;
+  color: white;
 }
 
 #map {
   display: flex;
+  margin: 4em;
   width: auto; 
   height: 50%;
-  margin: 4em;
   border-radius: 2em;
 }
